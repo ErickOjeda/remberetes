@@ -1,12 +1,10 @@
 package com.lembretes.remberetes.entitys;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
+@Entity
+@Table(name="pessoas", schema="public")
 public class Pessoa {
 
     @Id
@@ -16,7 +14,7 @@ public class Pessoa {
     private Long id;
 
     @Getter @Setter
+    @Column(name = "nome", nullable = false)
     private String nome;
-
 
 }
