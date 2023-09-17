@@ -24,5 +24,14 @@ public class Lembrete {
     private String nome;
 
 
+    public Lembrete(long id, String nome, Pessoa pessoa) {
+        this.id = id;
+        this.nome = nome;
+        this.pessoa = pessoa;
 
+    }
+
+    public Lembrete(){
+
+    }
 }

@@ -11,4 +11,9 @@ public class LembreteDTO {
 
     private String nome;
 
+    public LembreteDTO(Long id, String nome, Pessoa pessoa) {
+        this.id = id;
+        this.pessoa = pessoa;
+        this.nome = nome;
+    }
 }
